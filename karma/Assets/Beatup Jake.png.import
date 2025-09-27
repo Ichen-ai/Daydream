@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmpk2ib5t5mb4"
-path="res://.godot/imported/Monitor.png-d41c3fa53104ed2cc8fbd009a044d250.ctex"
+uid="uid://bd0itx5dfs7mw"
+path="res://.godot/imported/Beatup Jake.png-37e6dff2ca8436e52b9b4e4cb0cb179f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Monitor.png"
-dest_files=["res://.godot/imported/Monitor.png-d41c3fa53104ed2cc8fbd009a044d250.ctex"]
+source_file="res://Assets/Beatup Jake.png"
+dest_files=["res://.godot/imported/Beatup Jake.png-37e6dff2ca8436e52b9b4e4cb0cb179f.ctex"]
 
 [params]
 

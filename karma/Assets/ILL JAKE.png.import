@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmpk2ib5t5mb4"
-path="res://.godot/imported/Monitor.png-d41c3fa53104ed2cc8fbd009a044d250.ctex"
+uid="uid://buxdmi0ksq2ak"
+path="res://.godot/imported/ILL JAKE.png-030dc7f3c454d46edbd7b95f73087f75.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Monitor.png"
-dest_files=["res://.godot/imported/Monitor.png-d41c3fa53104ed2cc8fbd009a044d250.ctex"]
+source_file="res://Assets/ILL JAKE.png"
+dest_files=["res://.godot/imported/ILL JAKE.png-030dc7f3c454d46edbd7b95f73087f75.ctex"]
 
 [params]
 

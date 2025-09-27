@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://cic2fpwybjs8p"]
+
+[ext_resource type="Script" uid="uid://c8pnact1viaxr" path="res://Scripts/monitor_body.gd" id="1_0we0v"]
+[ext_resource type="PackedScene" uid="uid://divtvxrjqdjki" path="res://Scenes/Monitor.tscn" id="1_oh2qm"]
+
+[node name="MonitorBody" type="CharacterBody2D"]
+script = ExtResource("1_0we0v")
+
+[node name="Monitor" parent="." instance=ExtResource("1_oh2qm")]
+animation = &"Monitor 6"

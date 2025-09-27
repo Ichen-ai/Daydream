@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=3 uid="uid://dfchat2w04bwt"]
+
+[ext_resource type="Texture2D" uid="uid://dxcdkeujtoeqw" path="res://Assets/Angry Susan.png" id="1_rbfdw"]
+[ext_resource type="Texture2D" uid="uid://d2tn036bx02tu" path="res://Assets/Sad Susan.png" id="2_re5lm"]
+[ext_resource type="Texture2D" uid="uid://yancyn05i6c3" path="res://Assets/Susan.png" id="3_vyu2j"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_06y2t"]
+atlas = ExtResource("1_rbfdw")
+region = Rect2(0, 0, 400, 400)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v1wqv"]
+atlas = ExtResource("2_re5lm")
+region = Rect2(0, 0, 400, 400)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kbs15"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_06y2t")
+}],
+"loop": true,
+"name": &"Angry Susan",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v1wqv")
+}],
+"loop": true,
+"name": &"Sad Susan",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_vyu2j")
+}],
+"loop": true,
+"name": &"Susan",
+"speed": 5.0
+}]
+
+[node name="Susan" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_kbs15")
+animation = &"Angry Susan"

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmpk2ib5t5mb4"
-path="res://.godot/imported/Monitor.png-d41c3fa53104ed2cc8fbd009a044d250.ctex"
+uid="uid://dwbq0he83m05d"
+path="res://.godot/imported/Dripped_Out_Billy.png-d8c9859dd2863589f6eef2088e43291f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Monitor.png"
-dest_files=["res://.godot/imported/Monitor.png-d41c3fa53104ed2cc8fbd009a044d250.ctex"]
+source_file="res://Assets/Dripped_Out_Billy.png"
+dest_files=["res://.godot/imported/Dripped_Out_Billy.png-d8c9859dd2863589f6eef2088e43291f.ctex"]
 
 [params]
 

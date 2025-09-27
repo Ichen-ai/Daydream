@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmpk2ib5t5mb4"
-path="res://.godot/imported/Monitor.png-d41c3fa53104ed2cc8fbd009a044d250.ctex"
+uid="uid://dxcdkeujtoeqw"
+path="res://.godot/imported/Angry Susan.png-46c575f444e5840e2f6f66fccc4982ee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Monitor.png"
-dest_files=["res://.godot/imported/Monitor.png-d41c3fa53104ed2cc8fbd009a044d250.ctex"]
+source_file="res://Assets/Angry Susan.png"
+dest_files=["res://.godot/imported/Angry Susan.png-46c575f444e5840e2f6f66fccc4982ee.ctex"]
 
 [params]
 

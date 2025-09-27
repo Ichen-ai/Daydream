@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmpk2ib5t5mb4"
-path="res://.godot/imported/Monitor.png-d41c3fa53104ed2cc8fbd009a044d250.ctex"
+uid="uid://yancyn05i6c3"
+path="res://.godot/imported/Susan.png-5a24486391f36345e7bf8a8be7f9a669.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Monitor.png"
-dest_files=["res://.godot/imported/Monitor.png-d41c3fa53104ed2cc8fbd009a044d250.ctex"]
+source_file="res://Assets/Susan.png"
+dest_files=["res://.godot/imported/Susan.png-5a24486391f36345e7bf8a8be7f9a669.ctex"]
 
 [params]
 

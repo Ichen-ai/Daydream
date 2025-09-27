@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmpk2ib5t5mb4"
-path="res://.godot/imported/Monitor.png-d41c3fa53104ed2cc8fbd009a044d250.ctex"
+uid="uid://d2tn036bx02tu"
+path="res://.godot/imported/Sad Susan.png-fe3ebe2a32c8bf903c31a549969106ec.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Monitor.png"
-dest_files=["res://.godot/imported/Monitor.png-d41c3fa53104ed2cc8fbd009a044d250.ctex"]
+source_file="res://Assets/Sad Susan.png"
+dest_files=["res://.godot/imported/Sad Susan.png-fe3ebe2a32c8bf903c31a549969106ec.ctex"]
 
 [params]
 
