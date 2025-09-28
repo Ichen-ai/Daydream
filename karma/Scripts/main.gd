@@ -1,7 +1,7 @@
 extends Node2D
 
-var jakeKarma = 25
-var susanKarma = 50
+var jakeKarma = 75
+var susanKarma = 75
 var billyKarma = 75
 
 # Called when the node enters the scene tree for the first time.
