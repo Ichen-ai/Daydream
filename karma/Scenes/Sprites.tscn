@@ -1,7 +1,7 @@
 [gd_scene load_steps=22 format=3 uid="uid://bggxt7jjsuata"]
 
 [ext_resource type="Texture2D" uid="uid://dxcdkeujtoeqw" path="res://Assets/Angry Susan.png" id="1_hegdq"]
-[ext_resource type="Script" uid="uid://bjcw7suw73m4y" path="res://Scenes/sprites.gd" id="1_rlj76"]
+[ext_resource type="Script" uid="uid://bjcw7suw73m4y" path="res://Scripts/sprites.gd" id="1_rlj76"]
 [ext_resource type="Texture2D" uid="uid://c8urytsv2b7jq" path="res://Assets/Homeless Billy.png" id="2_rlj76"]
 [ext_resource type="Texture2D" uid="uid://cjqfce6nt2vq0" path="res://Assets/Buff_Billy.png" id="3_21ou0"]
 [ext_resource type="Texture2D" uid="uid://bd0itx5dfs7mw" path="res://Assets/Beatup Jake.png" id="4_qijvh"]
