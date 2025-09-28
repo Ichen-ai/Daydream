@@ -35,10 +35,16 @@ func _process(_delta: float) -> void:
 		if Main.curSP == "Grief":
 			info.text = "Susan is thinking \n\nabout her late husband\n\nOption 1:Dwell on memories\n\nOption 2:Try to keep busy"
 		if Main.curSP == "Gossip":
-			info.text = "Susan hears her neighbors \n\ngossiping about her\n\nOption 1: Yell at them\n\nOption 2: Ignore them"
+			info.text = "Susan hears her neighbors \n\ngossiping about her\n\nOption 1:Yell at them\n\nOption 2:Ignore them"
 		if Main.curSP == "Dinner":
-			info.text = "Susan gets invited to her \n\nfriend’s house for dinner\n\nOption 1: Decline\n\nOption 2:Accept"
+			info.text = "Susan gets invited to her \n\nfriend’s house for dinner\n\nOption 1:Decline\n\nOption 2:Accept"
 	if Input.is_action_just_pressed("button6"):
 		logs.text = "Billy"
 		notebook.play("notebook")
+		if Main.curBP == "Starving":
+			info.text = "Billy is starving\n\nOption 1:Beg for food\n\nOption 2:Spend \n\nremaining money"
+		if Main.curBP == "Strong":
+			info.text = "Billy is strong\n\nOption 1:Fight random\n\n people\n\nOption 2:Do odd jobs"
+		if Main.curBP == "Money":
+			info.text = "Billy finds $10\n\nOption 1:Spend on junk\n\nOption 2:Start small\n\n hustles"
 	
