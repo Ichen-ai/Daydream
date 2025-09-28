@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://dwjvq067okgxt"]
 
-[ext_resource type="Script" uid="uid://b7v61q71kjpci" path="res://note.gd" id="1_i8w2w"]
+[ext_resource type="Script" uid="uid://b7v61q71kjpci" path="res://Scripts/note.gd" id="1_i8w2w"]
 [ext_resource type="Texture2D" uid="uid://dufleq1duf7q2" path="res://Assets/notebook.png" id="2_gvrn8"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_apojy"]

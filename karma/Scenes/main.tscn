@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://c0hg3in6njbmy"]
+[gd_scene load_steps=20 format=3 uid="uid://c0hg3in6njbmy"]
 
 [ext_resource type="Script" uid="uid://cl6fgscuaox60" path="res://Scripts/main.gd" id="1_bo1nx"]
 [ext_resource type="PackedScene" uid="uid://cic2fpwybjs8p" path="res://Scenes/monitorBody.tscn" id="2_bo1nx"]
@@ -8,10 +8,11 @@
 [ext_resource type="AudioStream" uid="uid://bw5cfp1btfucf" path="res://Sounds/Tired Daydrea.mp3" id="6_21xkr"]
 [ext_resource type="AudioStream" uid="uid://dkhpdubu6632s" path="res://Sounds/button-press.mp3" id="6_344ge"]
 [ext_resource type="Texture2D" uid="uid://qiirc8l1j7og" path="res://Assets/sound-icon.png" id="6_hptm8"]
-[ext_resource type="Script" path="res://Scenes/mute.gd" id="6_ynf5e"]
+[ext_resource type="Script" uid="uid://d3nc6y4vk00lh" path="res://Scripts/mute.gd" id="6_ynf5e"]
 [ext_resource type="AudioStream" uid="uid://crco18y3bmeij" path="res://Sounds/channel-switch.mp3" id="7_ynf5e"]
-[ext_resource type="Script" uid="uid://dhsoipmbfq5b7" path="res://Scenes/progress_bar.gd" id="9_hptm8"]
+[ext_resource type="Script" uid="uid://dhsoipmbfq5b7" path="res://Scripts/progress_bar.gd" id="9_hptm8"]
 [ext_resource type="Texture2D" uid="uid://mvfyf44hhuud" path="res://Assets/redBar.png" id="9_ynf5e"]
+[ext_resource type="PackedScene" uid="uid://c5gqqu28vspqh" path="res://Scenes/screen.tscn" id="13_fdnlq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jjvhh"]
 atlas = ExtResource("4_jjvhh")
@@ -177,6 +178,8 @@ offset_top = -166.0
 offset_right = 300.0
 offset_bottom = -106.0
 theme_override_font_sizes/font_size = 8
+
+[node name="Screen" parent="." instance=ExtResource("13_fdnlq")]
 
 [connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
 [connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
