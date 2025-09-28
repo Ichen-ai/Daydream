@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://c0hg3in6njbmy"]
+[gd_scene load_steps=17 format=3 uid="uid://c0hg3in6njbmy"]
 
 [ext_resource type="Script" uid="uid://cl6fgscuaox60" path="res://Scripts/main.gd" id="1_bo1nx"]
 [ext_resource type="PackedScene" uid="uid://cic2fpwybjs8p" path="res://Scenes/monitorBody.tscn" id="2_bo1nx"]
@@ -7,6 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://icwnvdh0eknc" path="res://Assets/Buttons.png" id="4_jjvhh"]
 [ext_resource type="AudioStream" uid="uid://bw5cfp1btfucf" path="res://Sounds/Tired Daydrea.mp3" id="6_21xkr"]
 [ext_resource type="AudioStream" uid="uid://dkhpdubu6632s" path="res://Sounds/button-press.mp3" id="6_344ge"]
+[ext_resource type="Texture2D" uid="uid://qiirc8l1j7og" path="res://Assets/sound-icon.png" id="6_hptm8"]
+[ext_resource type="Script" uid="uid://d3nc6y4vk00lh" path="res://Scenes/mute.gd" id="6_ynf5e"]
 [ext_resource type="AudioStream" uid="uid://crco18y3bmeij" path="res://Sounds/channel-switch.mp3" id="7_ynf5e"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jjvhh"]
@@ -117,6 +119,16 @@ text = "2"
 
 [node name="Notebook" parent="." instance=ExtResource("2_kry3j")]
 
+[node name="MuteButton" type="TextureButton" parent="."]
+offset_left = -250.0
+offset_top = 104.0
+offset_right = 150.0
+offset_bottom = 504.0
+scale = Vector2(0.1, 0.1)
+texture_normal = ExtResource("6_hptm8")
+stretch_mode = 4
+script = ExtResource("6_ynf5e")
+
 [node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_344ge")
 
@@ -143,3 +155,5 @@ horizontal_alignment = 1
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="button_down" from="Button2" to="." method="_on_button_2_button_down"]
 [connection signal="button_up" from="Button2" to="." method="_on_button_2_button_up"]
+[connection signal="pressed" from="MuteButton" to="." method="_on_mute_button_pressed"]
+[connection signal="pressed" from="MuteButton" to="MuteButton" method="_on_pressed"]
