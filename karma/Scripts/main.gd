@@ -8,6 +8,8 @@ extends Node2D
 @onready var label_2: Label = $Button2/Label2
 @onready var audio_stream_player_3: AudioStreamPlayer = $AudioStreamPlayer3
 
+#current monitor
+var curMonitor = 1
 
 #Karma
 var jakeKarma = 25
@@ -41,6 +43,52 @@ func _on_button_button_down() -> void:
 func _on_button_button_up() -> void:
 	sprite_2d.play("Idle")
 	label.position = Vector2(16, 0)
+	var randint = rng.randi_range(0, 10)
+	if Main.curMonitor == 1:
+		if curJP == "Bullied":
+			if randint <= 6:
+				Main.jakeKarma += 10
+			else:
+				Main.jakeKarma -= 15
+		if curJP == "Project":
+			if randint < 7:
+				Main.jakeKarma -= 10
+			elif randint <= 8:
+				Main.jakeKarma += 10
+			else:
+				Main.jakeKarma += 10
+		if curJP == "Test":
+			if randint <= 8:
+				Main.jakeKarma += 20
+			else:
+				Main.jakeKarma -= 5
+	if Main.curMonitor == 2:
+		if curSP == "Grief":
+			Main.susanKarma += 5
+		if curSP == "Gossip":
+			if randint <= 5:
+				Main.susanKarma -= 10
+			else:
+				Main.susanKarma += 20
+		if curSP == "Dinner":
+			Main.susanKarma += 5
+	if Main.curMonitor == 3:
+		if curBP == "starving":
+			if randint <= 5:
+				Main.billyKarma -= 10
+			else:
+				Main.billyKarma += 10
+		if curBP == "Strong":
+			if randint <= 5:
+				Main.billyKarma += 15
+			else:
+				Main.billyKarma += 20
+		if curBP == "Money":
+			if randint <= 9:
+				Main.billyKarma += 5
+			else:
+				Main.billyKarma -= 30
+		
 	dayText()
 	Main.curJP = JakePrompt[rng.randi_range(0, 2)]
 	Main.curSP = SusanPrompt[rng.randi_range(0, 2)]
@@ -54,6 +102,54 @@ func _on_button_2_button_down() -> void:
 func _on_button_2_button_up() -> void:
 	sprite2_2d.play("Idle2")
 	label_2.position = Vector2(16, -1)
+	var randint = rng.randi_range(0, 10)
+	if Main.curMonitor == 1:
+		if curJP == "Bullied":
+			if randint <= 6:
+				Main.jakeKarma -= 15
+			else:
+				Main.jakeKarma += 20
+		if curJP == "Project":
+			if randint <= 8:
+				Main.jakeKarma += 10
+			else:
+				Main.jakeKarma -= 10
+		if curJP == "Test":
+			if randint <= 7:
+				Main.jakeKarma -= 10
+			else:
+				Main.jakeKarma += 10
+	if Main.curMonitor == 2:
+		if curSP == "Grief":
+			if randint <= 8:
+				Main.susanKarma -= 5
+			elif randint <= 9:
+				Main.susanKarma += 20
+			else:
+				Main.susanKarma += 5
+		if curSP == "Gossip":
+			pass
+		if curSP == "Dinner":
+			if randint <= 5:
+				Main.susanKarma -= 10
+			else:
+				Main.susanKarma += 10
+	if Main.curMonitor == 3:
+		if curBP == "starving":
+			if randint <= 7:
+				Main.billyKarma -= 15
+			else:
+				Main.billyKarma += 15
+		if curBP == "Strong":
+			if randint <= 9:
+				Main.billyKarma -= 20
+			else:
+				Main.billyKarma += 5
+		if curBP == "Money":
+			if randint <= 8:
+				Main.billyKarma -= 20
+			else:
+				Main.billyKarma += 10
 	dayText()
 	Main.curJP = JakePrompt[rng.randi_range(0, 2)]
 	Main.curSP = SusanPrompt[rng.randi_range(0, 2)]
