@@ -8,6 +8,7 @@ extends Node2D
 @onready var day_counter: Label = $DayCounter
 @onready var label: Label = $Button/Label
 @onready var label_2: Label = $Button2/Label2
+@onready var audio_stream_player_3: AudioStreamPlayer = $AudioStreamPlayer3
 
 
 #Karma
@@ -35,6 +36,7 @@ var curSP = SusanPrompt[rng.randi_range(0, 2)]
 var curBP = BillyPrompt[rng.randi_range(0, 2)]
 
 func _on_button_button_down() -> void:
+	audio_stream_player_3.play()
 	sprite_2d.play("Press")
 	label.position = Vector2(16, 3.3)
 
@@ -47,6 +49,7 @@ func _on_button_button_up() -> void:
 	Main.curBP = BillyPrompt[rng.randi_range(0, 2)]
 
 func _on_button_2_button_down() -> void:
+	audio_stream_player_3.play()
 	sprite2_2d.play("Press2")
 	label_2.position = Vector2(16,2.3)
 
