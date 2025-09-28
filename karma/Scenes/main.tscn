@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://c0hg3in6njbmy"]
+[gd_scene load_steps=15 format=3 uid="uid://c0hg3in6njbmy"]
 
 [ext_resource type="Script" uid="uid://cl6fgscuaox60" path="res://Scripts/main.gd" id="1_bo1nx"]
 [ext_resource type="PackedScene" uid="uid://cic2fpwybjs8p" path="res://Scenes/monitorBody.tscn" id="2_bo1nx"]
@@ -6,6 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://bggxt7jjsuata" path="res://Scenes/Sprites.tscn" id="3_8gbba"]
 [ext_resource type="Texture2D" uid="uid://icwnvdh0eknc" path="res://Assets/Buttons.png" id="4_jjvhh"]
 [ext_resource type="AudioStream" uid="uid://bw5cfp1btfucf" path="res://Sounds/Tired Daydrea.mp3" id="6_21xkr"]
+[ext_resource type="AudioStream" uid="uid://dkhpdubu6632s" path="res://Sounds/button-press.mp3" id="6_344ge"]
+[ext_resource type="AudioStream" uid="uid://crco18y3bmeij" path="res://Sounds/channel-switch.mp3" id="7_ynf5e"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jjvhh"]
 atlas = ExtResource("4_jjvhh")
@@ -115,7 +117,13 @@ text = "2"
 
 [node name="Notebook" parent="." instance=ExtResource("2_kry3j")]
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_344ge")
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_ynf5e")
+
+[node name="AudioStreamPlayer1" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_21xkr")
 volume_db = -7.633
 autoplay = true
