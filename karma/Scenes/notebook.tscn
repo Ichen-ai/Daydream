@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=3 uid="uid://dwjvq067okgxt"]
+
+[ext_resource type="Script" uid="uid://b7v61q71kjpci" path="res://note.gd" id="1_i8w2w"]
+[ext_resource type="Texture2D" uid="uid://dufleq1duf7q2" path="res://Assets/notebook.png" id="2_gvrn8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_apojy"]
+atlas = ExtResource("2_gvrn8")
+region = Rect2(320, 0, 80, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n8bdy"]
+atlas = ExtResource("2_gvrn8")
+region = Rect2(0, 0, 400, 400)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g5l6w"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_apojy")
+}],
+"loop": true,
+"name": &"blank",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n8bdy")
+}],
+"loop": true,
+"name": &"notebook",
+"speed": 5.0
+}]
+
+[node name="StaticBody2D" type="StaticBody2D"]
+script = ExtResource("1_i8w2w")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_g5l6w")
+animation = &"notebook"
+
+[node name="log" type="Label" parent="."]
+offset_left = -22.0
+offset_top = -126.0
+offset_right = 18.0
+offset_bottom = -103.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+horizontal_alignment = 1
