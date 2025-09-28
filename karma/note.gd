@@ -32,6 +32,12 @@ func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("button5"):
 		notebook.play("notebook")
 		logs.text = "Susan"
+		if Main.curSP == "Grief":
+			info.text = "Susan is thinking \n\nabout her late husband\n\nOption 1:Dwell on memories\n\nOption 2:Try to keep busy"
+		if Main.curSP == "Gossip":
+			info.text = "Susan hears her neighbors \n\ngossiping about her\n\nOption 1: Yell at them\n\nOption 2: Ignore them"
+		if Main.curSP == "Dinner":
+			info.text = "Susan gets invited to her \n\nfriend’s house for dinner\n\nOption 1: Decline\n\nOption 2:Accept"
 	if Input.is_action_just_pressed("button6"):
 		logs.text = "Billy"
 		notebook.play("notebook")
