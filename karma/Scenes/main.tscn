@@ -10,6 +10,8 @@
 [ext_resource type="Texture2D" uid="uid://qiirc8l1j7og" path="res://Assets/sound-icon.png" id="6_hptm8"]
 [ext_resource type="Script" uid="uid://d3nc6y4vk00lh" path="res://Scenes/mute.gd" id="6_ynf5e"]
 [ext_resource type="AudioStream" uid="uid://crco18y3bmeij" path="res://Sounds/channel-switch.mp3" id="7_ynf5e"]
+[ext_resource type="Script" uid="uid://dhsoipmbfq5b7" path="res://Scenes/progress_bar.gd" id="9_hptm8"]
+[ext_resource type="Texture2D" uid="uid://mvfyf44hhuud" path="res://Assets/redBar.png" id="9_ynf5e"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jjvhh"]
 atlas = ExtResource("4_jjvhh")
@@ -149,6 +151,25 @@ offset_bottom = 108.0
 text = "Day
 1"
 horizontal_alignment = 1
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+offset_left = -306.0
+offset_top = -171.0
+offset_right = -271.0
+offset_bottom = 171.0
+fill_mode = 3
+show_percentage = false
+script = ExtResource("9_hptm8")
+
+[node name="KarmaBar" type="TextureProgressBar" parent="ProgressBar"]
+layout_mode = 0
+offset_left = -17.0
+offset_top = -8.0
+offset_right = 47.0
+offset_bottom = 352.0
+rounded = true
+fill_mode = 3
+texture_progress = ExtResource("9_ynf5e")
 
 [connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
 [connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
