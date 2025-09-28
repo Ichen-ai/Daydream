@@ -16,6 +16,7 @@ func _ready() -> void:
 
 func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("button1"):
+		#will add sick jake later
 		if 0 < Main.jakeKarma and Main.jakeKarma <= 33:
 			sprites.play("Normal Jake")
 			sprites.scale = Vector2(jScaleX, jScaleY)
@@ -28,6 +29,8 @@ func _process(_delta: float) -> void:
 			sprites.play("Hurt Jake")
 			sprites.scale = Vector2(jScaleX, jScaleY)
 			sprites.position = Vector2(10, 10)
+		else:
+			sprites.play("NOONE")
 	if Input.is_action_just_pressed("button3"):
 		sprites.play("Sad Susan")
 		sprites.scale = Vector2(1.25, 1.25)

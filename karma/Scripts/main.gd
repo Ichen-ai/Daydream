@@ -1,6 +1,6 @@
 extends Node2D
 
-var jakeKarma = 75
+var jakeKarma = 25
 var susanKarma = 50
 var billyKarma = 75
 
