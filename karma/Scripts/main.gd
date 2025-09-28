@@ -6,19 +6,25 @@ extends Node2D
 @onready var label: Label = $Button/Label
 @onready var label_2: Label = $Button2/Label2
 
+#Karma
 var jakeKarma = 25
 var susanKarma = 50
 var billyKarma = 75
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
+#Day cycle
+var day = 1
 
+#Prompts
+var JakePrompt = ["Bullied", "Project", "Test"]
+var SusanPrompt = ["Grief", "Gossip", "Dinner"]
+var BillyPrompt = ["Starving", "Strong", "Money"]
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(_delta: float) -> void:
-	pass
-	
+var rng = RandomNumberGenerator.new()
+
+#current prompts
+var curJP = JakePrompt[rng.randi_range(0, 2)]
+var curSP = SusanPrompt[rng.randi_range(0, 2)]
+var curBP = BillyPrompt[rng.randi_range(0, 2)]
 
 func _on_button_button_down() -> void:
 	sprite_2d.play("Press")
@@ -27,6 +33,10 @@ func _on_button_button_down() -> void:
 func _on_button_button_up() -> void:
 	sprite_2d.play("Idle")
 	label.position = Vector2(16, 0)
+	day += 1
+	curJP = JakePrompt[rng.randi_range(0, 2)]
+	curSP = SusanPrompt[rng.randi_range(0, 2)]
+	curBP = BillyPrompt[rng.randi_range(0, 2)]
 
 func _on_button_2_button_down() -> void:
 	sprite2_2d.play("Press2")
@@ -35,3 +45,7 @@ func _on_button_2_button_down() -> void:
 func _on_button_2_button_up() -> void:
 	sprite2_2d.play("Idle2")
 	label_2.position = Vector2(16, -1)
+	day += 1
+	curJP = JakePrompt[rng.randi_range(0, 2)]
+	curSP = SusanPrompt[rng.randi_range(0, 2)]
+	curBP = BillyPrompt[rng.randi_range(0, 2)]

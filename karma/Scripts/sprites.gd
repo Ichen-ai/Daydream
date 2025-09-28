@@ -63,7 +63,3 @@ func _process(_delta: float) -> void:
 			sprites.position = Vector2(0, 0)
 		else:
 			sprites.play("NOONE")
-		#if Input.is_action_just_pressed("button3"):
-			#sprites.play("Billy")
-			#sprites.scale = Vector2(1, 1)
-			#sprites.position = Vector2(0, 0)
