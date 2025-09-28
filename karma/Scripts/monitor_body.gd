@@ -1,9 +1,10 @@
 extends CharacterBody2D
 
 @onready var monitor: AnimatedSprite2D = $Monitor
+
 var jakeSaved = false
 var susanSaved = false
-var billy
+var billy = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
