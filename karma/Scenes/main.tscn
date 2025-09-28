@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" uid="uid://cl6fgscuaox60" path="res://Scripts/main.gd" id="1_bo1nx"]
 [ext_resource type="PackedScene" uid="uid://cic2fpwybjs8p" path="res://Scenes/monitorBody.tscn" id="2_bo1nx"]
-[ext_resource type="PackedScene" path="res://Scenes/notebook.tscn" id="2_kry3j"]
-[ext_resource type="PackedScene" path="res://Scenes/Sprites.tscn" id="3_8gbba"]
+[ext_resource type="PackedScene" uid="uid://dwjvq067okgxt" path="res://Scenes/notebook.tscn" id="2_kry3j"]
+[ext_resource type="PackedScene" uid="uid://bggxt7jjsuata" path="res://Scenes/Sprites.tscn" id="3_8gbba"]
 [ext_resource type="Texture2D" uid="uid://icwnvdh0eknc" path="res://Assets/Buttons.png" id="4_jjvhh"]
 [ext_resource type="AudioStream" uid="uid://bw5cfp1btfucf" path="res://Sounds/Tired Daydrea.mp3" id="6_21xkr"]
 
@@ -120,6 +120,15 @@ stream = ExtResource("6_21xkr")
 volume_db = -7.633
 autoplay = true
 parameters/looping = true
+
+[node name="DayCounter" type="Label" parent="."]
+offset_left = 245.0
+offset_top = 60.0
+offset_right = 298.0
+offset_bottom = 108.0
+text = "Day
+1"
+horizontal_alignment = 1
 
 [connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
 [connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
