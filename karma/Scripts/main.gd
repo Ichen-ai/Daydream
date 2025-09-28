@@ -1,7 +1,5 @@
 extends Node2D
 
-#hi
-
 @onready var sprite_2d: AnimatedSprite2D = $Button/AnimatedSprite2D
 @onready var sprite2_2d: AnimatedSprite2D = $Button2/AnimatedSprite2D
 
@@ -9,6 +7,7 @@ extends Node2D
 @onready var label: Label = $Button/Label
 @onready var label_2: Label = $Button2/Label2
 @onready var audio_stream_player_3: AudioStreamPlayer = $AudioStreamPlayer3
+@onready var progress_bar: ProgressBar = $ProgressBar
 
 
 #Karma
