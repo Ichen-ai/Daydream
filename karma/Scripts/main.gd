@@ -1,5 +1,7 @@
 extends Node2D
 
+#hi
+
 @onready var sprite_2d: AnimatedSprite2D = $Button/AnimatedSprite2D
 @onready var sprite2_2d: AnimatedSprite2D = $Button2/AnimatedSprite2D
 
