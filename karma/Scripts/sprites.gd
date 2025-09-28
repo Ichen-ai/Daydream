@@ -21,11 +21,11 @@ func _process(_delta: float) -> void:
 			sprites.play("Normal Jake")
 			sprites.scale = Vector2(jScaleX, jScaleY)
 			sprites.position = Vector2(10, 10)
-		if 34 <= Main.jakeKarma and Main.jakeKarma <= 66:
+		elif 34 <= Main.jakeKarma and Main.jakeKarma <= 66:
 			sprites.play("Sleep Deprived Jake")
 			sprites.scale = Vector2(jScaleX, jScaleY)
 			sprites.position = Vector2(10, 10)
-		if 67 <= Main.jakeKarma and Main.jakeKarma <= 99:
+		elif 67 <= Main.jakeKarma and Main.jakeKarma <= 99:
 			sprites.play("Hurt Jake")
 			sprites.scale = Vector2(jScaleX, jScaleY)
 			sprites.position = Vector2(10, 10)
