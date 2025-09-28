@@ -1,0 +1,137 @@
+[gd_scene load_steps=21 format=3 uid="uid://chrlrqkgntnl4"]
+
+[ext_resource type="Texture2D" uid="uid://dxcdkeujtoeqw" path="res://Assets/Angry Susan.png" id="1_hegdq"]
+[ext_resource type="Texture2D" uid="uid://c8urytsv2b7jq" path="res://Assets/Homeless Billy.png" id="2_rlj76"]
+[ext_resource type="Texture2D" uid="uid://cjqfce6nt2vq0" path="res://Assets/Buff_Billy.png" id="3_21ou0"]
+[ext_resource type="Texture2D" uid="uid://bd0itx5dfs7mw" path="res://Assets/Beatup Jake.png" id="4_qijvh"]
+[ext_resource type="Texture2D" uid="uid://crasc0xe53ssa" path="res://Assets/Normal Jake.png" id="5_jfsxq"]
+[ext_resource type="Texture2D" uid="uid://d2tn036bx02tu" path="res://Assets/Sad Susan.png" id="6_08dyb"]
+[ext_resource type="Texture2D" uid="uid://buxdmi0ksq2ak" path="res://Assets/ILL JAKE.png" id="7_qfcq2"]
+[ext_resource type="Texture2D" uid="uid://b5wufvod70xgy" path="res://Assets/NoSleepJake.png" id="8_1i8av"]
+[ext_resource type="Texture2D" uid="uid://yancyn05i6c3" path="res://Assets/Susan.png" id="9_ife52"]
+[ext_resource type="Texture2D" uid="uid://dwbq0he83m05d" path="res://Assets/Dripped_Out_Billy.png" id="10_kymvx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qm2oq"]
+atlas = ExtResource("1_hegdq")
+region = Rect2(0, 0, 400, 400)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k1hsi"]
+atlas = ExtResource("2_rlj76")
+region = Rect2(0, 0, 400, 400)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kdptv"]
+atlas = ExtResource("3_21ou0")
+region = Rect2(0, 0, 400, 400)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nqur0"]
+atlas = ExtResource("4_qijvh")
+region = Rect2(0, 0, 433, 576)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qnrpr"]
+atlas = ExtResource("5_jfsxq")
+region = Rect2(0, 0, 433, 576)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nnqre"]
+atlas = ExtResource("7_qfcq2")
+region = Rect2(0, 0, 433, 576)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fmsmo"]
+atlas = ExtResource("8_1i8av")
+region = Rect2(0, 0, 433, 576)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ljb8x"]
+atlas = ExtResource("9_ife52")
+region = Rect2(0, 0, 400, 400)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vfp80"]
+atlas = ExtResource("10_kymvx")
+region = Rect2(0, 0, 400, 400)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fef07"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qm2oq")
+}],
+"loop": true,
+"name": &"Angry Susan",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k1hsi")
+}],
+"loop": true,
+"name": &"Billy",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kdptv")
+}],
+"loop": true,
+"name": &"Buff Billy",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nqur0")
+}],
+"loop": true,
+"name": &"Hurt Jake",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qnrpr")
+}],
+"loop": true,
+"name": &"Normal Jake",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_08dyb")
+}],
+"loop": true,
+"name": &"Sad Susan",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nnqre")
+}],
+"loop": true,
+"name": &"Sick Jake",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fmsmo")
+}],
+"loop": true,
+"name": &"Sleep Deprived Jake",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ljb8x")
+}],
+"loop": true,
+"name": &"Susan",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vfp80")
+}],
+"loop": true,
+"name": &"Swag Billy",
+"speed": 5.0
+}]
+
+[node name="Sprites" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_fef07")
+animation = &"Buff Billy"
